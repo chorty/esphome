@@ -114,6 +114,11 @@ class BluetoothProxy : public esp32_ble_tracker::ESPBTDeviceListener, public Com
     return flags;
   }
 
+  std::string get_bluetooth_mac_address_pretty() {
+    const uint8_t *mac = esp_bt_dev_get_address();
+    return str_snprintf("%02X:%02X:%02X:%02X:%02X:%02X", 17, mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+  }
+
  protected:
   void send_api_packet_(const esp32_ble_tracker::ESPBTDevice &device);
 
