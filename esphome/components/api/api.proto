@@ -229,7 +229,7 @@ message DeviceInfoResponse {
   string suggested_area = 16;
 
   // The Bluetooth mac address of the device. For example "AC:BC:32:89:0E:AA"
-  string bluetooth_mac_address = 17;
+  string bluetooth_mac_address = 18;
 }
 
 message ListEntitiesRequest {
