@@ -15,6 +15,8 @@
 
 #include "bluetooth_connection.h"
 
+#include <esp_bt.h>
+
 namespace esphome {
 namespace bluetooth_proxy {
 
